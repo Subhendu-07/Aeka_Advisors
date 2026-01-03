@@ -3,7 +3,7 @@
 > **Discover your perfect weekend escape.** A smart recommendation engine that ranks travel destinations based on your preferences using a weighted scoring algorithm.
 
 <!-- Center this Link -->
-[Weekend Destination Ranker App(Live Demo)](https://weekend-destination.streamlit.app)
+[Weekend Destination Ranker App(Live Demo)](https://getaway-ranker.streamlit.app/)
 
 ---
 
@@ -84,7 +84,7 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Subhendu/weekend-getaway-ranker.git
+    git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/3.weekend-getaway-ranker
     cd weekend-getaway-ranker
     ```
 
@@ -117,7 +117,7 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/subhendu/weekend-getaway-ranker.git
+    git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/3.weekend-getaway-ranker
     cd weekend-getaway-ranker
     ```
 
@@ -169,7 +169,10 @@ weekend-getaway-ranker/
 
 ## 👨‍💻 Author
 
-Subhendu Mandal
+**Subhendu Mandal**  
+💼Backend / Full-Stack Developer  
+Passionate about clean UI & scalable backend systems ✨
 
-> ❤️ I believe in building impact, not just writing code.
+
+> ❤️ I believe in building impact, not just writing code.  
 > *💚 Backend Sage signing off..*

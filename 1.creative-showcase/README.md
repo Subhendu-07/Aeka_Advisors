@@ -2,7 +2,7 @@
 
 A full-stack **MERN** based web application where users can upload, showcase, like, and manage creative images with a modern neon-glass UI.
 
----
+
 
 ## 🚀 Live Demo
 
@@ -13,7 +13,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 
 > _(Links will be updated after deployment)_
 
----
+
 
 ## 🚀 Features
 
@@ -45,7 +45,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 - Lazy loading images
 - Smooth hover & click animations
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -64,11 +64,12 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 - JWT Authentication
 - CORS & dotenv
 
----
+
 
 ## 🗂 Project Structure
 
 ### 📦 Client (Frontend)
+```text
 client/
 ├── src/
 │ ├── components/
@@ -90,8 +91,10 @@ client/
 │ └── index.css
 ├── index.html
 ├── package.json
+```
 
 ### 🛠 Server (Backend)
+```text
 server/
 ├── middleware/
 │ └── auth.js
@@ -104,8 +107,9 @@ server/
 ├── .env
 ├── server.js
 ├── package.json
+```
 
----
+
 
 ## 🔑 Environment Variables
 
@@ -114,34 +118,36 @@ Create a `.env` file inside **server/**:
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
----
+
 
 ## ▶️ How to Run Locally
 
-# 1️⃣ Clone the Repository
-
+### 1️⃣ Clone the Repository
+```
 git clone https://github.com/your-username/creative-showcase.git
 cd creative-showcase
+```
 
-# 2️⃣ Install Server Dependencies
-
+### 2️⃣ Install Server Dependencies
+```
 cd server
 npm install
 npm run start
+```
 
 Server will run on:
 👉 http://localhost:5000
 
-# 3️⃣ Install Client Dependencies
-
+### 3️⃣ Install Client Dependencies
+```
 cd client
 npm install
 npm run dev
-
+``` 
 Client will run on:
 👉 http://localhost:5173
 
----
+
 
 ## 🔒 Protected Routes
 - /dashboard → Login required
@@ -161,10 +167,10 @@ Client will run on:
 - 📊 Analytics dashboard
 - 🌙 Theme toggle
 
----
+
 
 ## 👨‍💻 Author
 
-Subhendu Mandal
-💼 Backend / Full-Stack Developer
+**Subhendu Mandal**  
+💼Backend / Full-Stack Developer  
 Passionate about clean UI & scalable backend systems ✨
