@@ -33,7 +33,7 @@ This project supports **JWT-based authentication** and **user-specific task CRUD
 ---
 
 ## 📁 Project Structure
-
+```text
 Smart-ToDo-API/
 │
 ├── config/
@@ -59,6 +59,7 @@ Smart-ToDo-API/
 ├── .env
 ├── server.js
 └── package.json
+```
 
 ---
 
