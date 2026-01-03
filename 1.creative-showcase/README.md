@@ -109,7 +109,7 @@ server/
 ├── package.json
 ```
 
----
+
 
 ## 🔑 Environment Variables
 
@@ -118,7 +118,7 @@ Create a `.env` file inside **server/**:
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
----
+
 
 ## ▶️ How to Run Locally
 
@@ -145,7 +145,7 @@ npm run dev
 Client will run on:
 👉 http://localhost:5173
 
----
+
 
 ## 🔒 Protected Routes
 - /dashboard → Login required
@@ -165,11 +165,10 @@ Client will run on:
 - 📊 Analytics dashboard
 - 🌙 Theme toggle
 
----
+
 
 ## 👨‍💻 Author
 
-Subhendu Mandal
-
-💼 Backend / Full-Stack Developer
+**Subhendu Mandal**
+💼Backend / Full-Stack Developer
 Passionate about clean UI & scalable backend systems ✨
