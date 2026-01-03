@@ -123,25 +123,27 @@ JWT_SECRET=your_secret_key
 ## ▶️ How to Run Locally
 
 ### 1️⃣ Clone the Repository
-
+```
 git clone https://github.com/your-username/creative-showcase.git
 cd creative-showcase
+```
 
 ### 2️⃣ Install Server Dependencies
-
+```
 cd server
 npm install
 npm run start
+```
 
 Server will run on:
 👉 http://localhost:5000
 
 ### 3️⃣ Install Client Dependencies
-
+```
 cd client
 npm install
 npm run dev
-
+``` 
 Client will run on:
 👉 http://localhost:5173
 
@@ -169,6 +171,6 @@ Client will run on:
 
 ## 👨‍💻 Author
 
-**Subhendu Mandal**
-💼Backend / Full-Stack Developer
+**Subhendu Mandal**  
+💼Backend / Full-Stack Developer  
 Passionate about clean UI & scalable backend systems ✨
