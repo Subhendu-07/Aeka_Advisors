@@ -173,4 +173,8 @@ Client will run on:
 
 **Subhendu Mandal**  
 💼Backend / Full-Stack Developer  
+<<<<<<< HEAD
 Passionate about clean UI & scalable backend systems ✨
+=======
+Passionate about clean UI & scalable backend systems ✨
+>>>>>>> 99ed8ddd4361c9a2b30bb2982036d22acbed2d87
