@@ -3,7 +3,7 @@
 > **Discover your perfect weekend escape.** A smart recommendation engine that ranks travel destinations based on your preferences using a weighted scoring algorithm.
 
 <!-- Center this Link -->
-[Weekend Destination Ranker App(Live Demo)](https://weekend-destination.streamlit.app)
+[Weekend Destination Ranker App(Live Demo)](https://getaway-ranker.streamlit.app/)
 
 ---
 
