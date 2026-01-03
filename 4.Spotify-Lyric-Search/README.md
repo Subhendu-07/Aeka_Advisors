@@ -145,11 +145,11 @@ Evaluated on 100 randomly sampled songs using lyric snippets extracted from the 
 
 | Metric         | Score   |
 | -------------- | ------- |
-| Top-1 Accuracy | **90%** |
-| Top-3 Accuracy | **96%** |
-| Top-5 Accuracy | **97%** |
+| Top-1 Accuracy | **88%** |
+| Top-3 Accuracy | **94%** |
+| Top-5 Accuracy | **96%** |
 
-![Accuracy Report](./results/output.png)
+![Accuracy Report](./result/output.png)
 
 **Interpretation:**
 
