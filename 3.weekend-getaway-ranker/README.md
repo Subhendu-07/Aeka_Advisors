@@ -175,8 +175,4 @@ Passionate about clean UI & scalable backend systems ✨
 
 
 > ❤️ I believe in building impact, not just writing code.  
-<<<<<<< HEAD
 > *💚 Backend Sage signing off..*
-=======
-> *💚 Backend Sage signing off..*
->>>>>>> 99ed8ddd4361c9a2b30bb2982036d22acbed2d87
