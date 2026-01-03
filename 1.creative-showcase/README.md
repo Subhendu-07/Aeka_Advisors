@@ -69,6 +69,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 ## 🗂 Project Structure
 
 ### 📦 Client (Frontend)
+```text
 client/
 ├── src/
 │ ├── components/
@@ -90,8 +91,10 @@ client/
 │ └── index.css
 ├── index.html
 ├── package.json
+```
 
 ### 🛠 Server (Backend)
+```text
 server/
 ├── middleware/
 │ └── auth.js
@@ -104,6 +107,7 @@ server/
 ├── .env
 ├── server.js
 ├── package.json
+```
 
 ---
 
