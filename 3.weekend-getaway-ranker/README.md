@@ -169,7 +169,10 @@ weekend-getaway-ranker/
 
 ## 👨‍💻 Author
 
-Subhendu Mandal
+**Subhendu Mandal**  
+💼Backend / Full-Stack Developer  
+Passionate about clean UI & scalable backend systems ✨
 
-> ❤️ I believe in building impact, not just writing code.
+
+> ❤️ I believe in building impact, not just writing code.  
 > *💚 Backend Sage signing off..*
