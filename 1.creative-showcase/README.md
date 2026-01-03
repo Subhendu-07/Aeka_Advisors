@@ -2,7 +2,7 @@
 
 A full-stack **MERN** based web application where users can upload, showcase, like, and manage creative images with a modern neon-glass UI.
 
----
+
 
 ## 🚀 Live Demo
 
@@ -13,7 +13,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 
 > _(Links will be updated after deployment)_
 
----
+
 
 ## 🚀 Features
 
@@ -45,7 +45,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 - Lazy loading images
 - Smooth hover & click animations
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -64,7 +64,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 - JWT Authentication
 - CORS & dotenv
 
----
+
 
 ## 🗂 Project Structure
 
@@ -170,5 +170,6 @@ Client will run on:
 ## 👨‍💻 Author
 
 Subhendu Mandal
+
 💼 Backend / Full-Stack Developer
 Passionate about clean UI & scalable backend systems ✨
