@@ -84,7 +84,7 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Subhendu/weekend-getaway-ranker.git
+    git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/3.weekend-getaway-ranker
     cd weekend-getaway-ranker
     ```
 
@@ -117,7 +117,7 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/subhendu/weekend-getaway-ranker.git
+    git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/3.weekend-getaway-ranker
     cd weekend-getaway-ranker
     ```
 
