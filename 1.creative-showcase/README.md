@@ -6,7 +6,7 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 
 ## 🚀 Live Demo
 
-![Vercel](https://vercelbadge.vercel.app/api/subhendu-07s-projects/creativeshowcase)
+![Vercel](https://vercelbadge.vercel.app)(https://vercel.com/subhendu-07s-projects/creativeshowcase)
 
 🌐 **Frontend:** https://subhendu-creativeshowcase.vercel.app  
 ⚙️ **Backend API:** https://aeka-advisors-creativeshowcase-server.onrender.com 
@@ -121,8 +121,8 @@ JWT_SECRET=your_secret_key
 
 ### 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/creative-showcase.git
-cd creative-showcase
+git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+cd 1.creative-showcase
 ```
 
 ### 2️⃣ Install Server Dependencies

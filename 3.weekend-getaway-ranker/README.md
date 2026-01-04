@@ -84,8 +84,8 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/3.weekend-getaway-ranker
-    cd weekend-getaway-ranker
+    git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+    cd 3.weekend-getaway-ranker
     ```
 
 2. **Sync Dependencies**:
@@ -117,8 +117,8 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/3.weekend-getaway-ranker
-    cd weekend-getaway-ranker
+    git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+    cd 3.weekend-getaway-ranker
     ```
 
 2. **Install Requirements**:

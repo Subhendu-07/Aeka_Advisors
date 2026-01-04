@@ -79,7 +79,7 @@ Create a `.env` file in the root directory:
 
 ### Clone the repository
 ```
-git clone https://github.com/Subhendu-07/Aeka_Advisors/tree/main/2.Smart-ToDo-API
+git clone https://github.com/Subhendu-07/Aeka_Advisors.git
 ```
 
 ### Navigate to project folder

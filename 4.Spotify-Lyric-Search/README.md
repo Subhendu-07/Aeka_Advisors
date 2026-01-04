@@ -93,7 +93,13 @@ spotify-lyric-search/
 ├── requirements.txt
 └── README.md
 ```
+1. **Clone the repository**:
 
+    ```bash
+    git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+    cd 4.Spotify-Lyric-Search
+    ```
+    
 ## Installation
 ```
 python -m venv .venv
