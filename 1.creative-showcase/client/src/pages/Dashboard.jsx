@@ -13,12 +13,22 @@ export default function Dashboard() {
   const [loadingImages, setLoadingImages] = useState(true);
   const [preview, setPreview] = useState(null);
 
+  const token = localStorage.getItem("token");
   const username = localStorage.getItem("username");
 
+  /* =============================
+     Load images
+     - Logged in → own images
+     - Logged out → public images
+  ============================== */
   const loadImages = async () => {
     try {
       setLoadingImages(true);
-      const res = await api.get(`/images/${username}`);
+
+      const res = token
+        ? await api.get(`/images/${username}`)
+        : await api.get("/images/public");
+
       setImages(res.data || []);
     } catch {
       toast.error("Failed to load images");
@@ -27,6 +37,9 @@ export default function Dashboard() {
     }
   };
 
+  /* =============================
+     Upload image (login only)
+  ============================== */
   const uploadImage = async () => {
     if (!url.trim()) return toast.error("Image URL is required");
 
@@ -43,8 +56,12 @@ export default function Dashboard() {
     }
   };
 
+  /* =============================
+     Delete image (owner only)
+  ============================== */
   const deleteImage = async (id) => {
     if (!window.confirm("Delete this image?")) return;
+
     try {
       await api.delete(`/images/${id}`);
       setImages((prev) => prev.filter((img) => img._id !== id));
@@ -54,6 +71,9 @@ export default function Dashboard() {
     }
   };
 
+  /* =============================
+     Like / Unlike (login only)
+  ============================== */
   const likeImage = async (id) => {
     try {
       const res = await api.put(`/images/like/${id}`);
@@ -66,59 +86,73 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    if (username) loadImages();
-  }, [username]);
+    loadImages();
+  }, [token, username]);
 
-  const totalLikes = images.reduce((sum, i) => sum + (i.likes?.length || 0), 0);
+  const totalLikes = images.reduce(
+    (sum, i) => sum + (i.likes?.length || 0),
+    0
+  );
 
   return (
     <>
       <Navbar />
 
       <div className="dashboard-container">
-        <DragDropUpload onUpload={(droppedUrl) => setUrl(droppedUrl)} />
+        {/* ============ UPLOAD (LOGIN ONLY) ============ */}
+        {token && (
+          <>
+            <DragDropUpload onUpload={(droppedUrl) => setUrl(droppedUrl)} />
 
-        <div className="upload-card">
-          <h2 className="section-title">Upload your creativity</h2>
-          <p className="text-gray-400 mb-5">
-            Share your best visual moments
-          </p>
+            <div className="upload-card">
+              <h2 className="section-title">Upload your creativity</h2>
+              <p className="text-gray-400 mb-5">
+                Share your best visual moments
+              </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              className="upload-input"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              placeholder="Paste image URL here..."
-            />
-            <button
-              onClick={uploadImage}
-              disabled={uploading}
-              className="upload-btn"
-            >
-              {uploading ? "Uploading..." : "Upload"}
-            </button>
-          </div>
-        </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <input
+                  className="upload-input"
+                  value={url}
+                  onChange={(e) => setUrl(e.target.value)}
+                  placeholder="Paste image URL here..."
+                />
+                <button
+                  onClick={uploadImage}
+                  disabled={uploading}
+                  className="upload-btn"
+                >
+                  {uploading ? "Uploading..." : "Upload"}
+                </button>
+              </div>
+            </div>
+          </>
+        )}
 
+        {/* ============ GALLERY HEADER ============ */}
         <div className="mb-6 mt-6">
-          <h2 className="section-title">Your Gallery</h2>
+          <h2 className="section-title">
+            {token ? "Your Gallery" : "Explore Gallery"}
+          </h2>
           <p className="text-gray-400 text-sm">
-            {images.length} Images • {totalLikes} Likes
+            {images.length} Images
+            {token && ` • ${totalLikes} Likes`}
           </p>
         </div>
 
+        {/* ============ STATES ============ */}
         {loadingImages && (
           <p className="text-gray-400 text-center">Loading images...</p>
         )}
 
         {!loadingImages && images.length === 0 && (
           <p className="text-gray-400 text-center">
-            No images uploaded yet.
+            No images available.
           </p>
         )}
 
-        <div className="masonry">
+        {/* ============ IMAGES ============ */}
+        <div className="masonry" key={images.length}>
           {images.map((img) => (
             <ImageCard
               key={img._id}
@@ -129,6 +163,7 @@ export default function Dashboard() {
             />
           ))}
         </div>
+
       </div>
 
       <ImageModal image={preview} onClose={() => setPreview(null)} />

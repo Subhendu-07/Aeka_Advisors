@@ -5,22 +5,24 @@ import auth from "../middleware/auth.js";
 
 const router = express.Router();
 
-/* Upload */
-router.post("/", auth, async (req, res) => {
-  const img = await Image.create({
-    imageUrl: req.body.imageUrl,
-    user: req.user.id,
-  });
-  res.json(img);
+/* =========================
+   🔥 PUBLIC: Homepage images
+========================= */
+router.get("/public", async (req, res) => {
+  try {
+    const images = await Image.find()
+      .populate("user", "username")
+      .sort({ _id: -1 });
+
+    res.json(images);
+  } catch (err) {
+    res.status(500).json({ message: "Failed to load images" });
+  }
 });
 
-/* PRIVATE: Dashboard images */
-router.get("/:username", auth, async (req, res) => {
-  const images = await Image.find({ user: req.user.id }).sort({ _id: -1 });
-  res.json(images);
-});
-
-/*PUBLIC PROFILE */
+/* =========================
+   PUBLIC: User profile
+========================= */
 router.get("/public/:username", async (req, res) => {
   const user = await User.findOne({ username: req.params.username });
   if (!user) return res.json([]);
@@ -29,7 +31,28 @@ router.get("/public/:username", async (req, res) => {
   res.json(images);
 });
 
-/* DELETE (owner only) */
+/* =========================
+   PRIVATE: Upload image
+========================= */
+router.post("/", auth, async (req, res) => {
+  const img = await Image.create({
+    imageUrl: req.body.imageUrl,
+    user: req.user.id,
+  });
+  res.json(img);
+});
+
+/* =========================
+   PRIVATE: Dashboard images
+========================= */
+router.get("/:username", auth, async (req, res) => {
+  const images = await Image.find({ user: req.user.id }).sort({ _id: -1 });
+  res.json(images);
+});
+
+/* =========================
+   PRIVATE: Delete image
+========================= */
 router.delete("/:id", auth, async (req, res) => {
   const img = await Image.findById(req.params.id);
   if (!img) return res.status(404).json({ msg: "Not found" });
@@ -42,7 +65,9 @@ router.delete("/:id", auth, async (req, res) => {
   res.json({ msg: "Deleted" });
 });
 
-/* LIKE / UNLIKE */
+/* =========================
+   PRIVATE: Like / Unlike
+========================= */
 router.put("/like/:id", auth, async (req, res) => {
   const img = await Image.findById(req.params.id);
   if (!img) return res.status(404).json({ msg: "Not found" });
