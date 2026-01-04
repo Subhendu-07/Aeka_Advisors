@@ -32,7 +32,8 @@ A RESTful backend API for managing to-do items with secure CRUD operations.
 
 - 🛠 **Tech Stack:** Node.js, Express, MongoDB  
 - 🔐 JWT Authentication  
-- 📂 **Path:** `/smart-todo-api`  
+- 📂 **Path:** `/smart-todo-api`
+- 📦 **Postman Collection:**  "https://mandalsubhendu243-6863304.postman.co/workspace/  Subhendu_Workspace~3cdb7003-b4ed-4e26-b910-ecde2901d599/collection/47357056-4ce5678c-53d7-490a-8a2a-145d887d35f1?action=share&source=collection_link&creator=47357056"
 
 
 ### 3️⃣ Weekend Getaway Ranker  
