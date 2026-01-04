@@ -85,6 +85,7 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 
     ```bash
     git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+    cd Aeka_Advisors
     cd 3.weekend-getaway-ranker
     ```
 
@@ -118,6 +119,7 @@ Reference: [astral.sh/uv](https://github.com/astral-sh/uv)
 
     ```bash
     git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+    cd Aeka_Advisors
     cd 3.weekend-getaway-ranker
     ```
 

@@ -97,6 +97,7 @@ spotify-lyric-search/
 
 ```
 git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+cd Aeka_Advisors
 cd 4.Spotify-Lyric-Search
 ```
     

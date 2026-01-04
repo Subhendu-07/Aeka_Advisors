@@ -120,6 +120,7 @@ JWT_SECRET=your_secret_key
 ### 1️⃣ Clone the Repository
 ```
 git clone https://github.com/Subhendu-07/Aeka_Advisors.git
+cd Aeka_Advisors
 cd 1.creative-showcase
 ```
 

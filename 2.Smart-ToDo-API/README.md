@@ -84,6 +84,7 @@ git clone https://github.com/Subhendu-07/Aeka_Advisors.git
 
 ### Navigate to project folder
 ```
+cd Aeka_Advisors
 cd 2.Smart-ToDo-API
 ```
 
