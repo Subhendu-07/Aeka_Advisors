@@ -6,8 +6,6 @@ A full-stack **MERN** based web application where users can upload, showcase, li
 
 ## 🚀 Live Demo
 
-![Vercel](https://vercelbadge.vercel.app)(https://vercel.com/subhendu-07s-projects/creativeshowcase)
-
 🌐 **Frontend:** https://subhendu-creativeshowcase.vercel.app  
 ⚙️ **Backend API:** https://aeka-advisors-creativeshowcase-server.onrender.com 
 
