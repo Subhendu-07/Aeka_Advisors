@@ -182,7 +182,7 @@ These limitations are inherent to keyword-based retrieval systems and are not im
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Subhendu Mandal**  
 💼Backend / Full-Stack Developer  
