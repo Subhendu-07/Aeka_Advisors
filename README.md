@@ -40,7 +40,7 @@ A data-driven utility app that ranks weekend getaway destinations based on multi
 
 - 🛠 **Tech Stack:** Python, Streamlit  
 - 📂 **Path:** `/weekend-getaway-ranker`  
-- 🌐 **Live Demo:** https://getaway-ranker.streamlit.app/  
+- 🌐 **Live Demo:** https://getaway-ranker.streamlit.app 
 
 
 ### 4️⃣ Spotify Lyric Search  
